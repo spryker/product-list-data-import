@@ -31,9 +31,6 @@ class ProductListDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testImportImportsData(): void
     {
         // Assign
@@ -51,9 +48,6 @@ class ProductListDataImportPluginTest extends Unit
         $this->tester->assertProductListTableContainsRecords();
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenProductListKeyIsNotDefined(): void
     {
         // Assign
@@ -67,9 +61,6 @@ class ProductListDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testGetImportTypeReturnsTypeOfImporter(): void
     {
         // Assert

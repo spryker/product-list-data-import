@@ -31,9 +31,6 @@ class ProductListProductConcreteDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         parent::setUp();
@@ -49,9 +46,6 @@ class ProductListProductConcreteDataImportPluginTest extends Unit
         }
     }
 
-    /**
-     * @return void
-     */
     public function testImportImportsData(): void
     {
         // Assign
@@ -70,9 +64,6 @@ class ProductListProductConcreteDataImportPluginTest extends Unit
         $this->tester->assertProductListConcreteProductTableContainsRecords();
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenProductListKeyIsNotDefined(): void
     {
         // Assign
@@ -86,9 +77,6 @@ class ProductListProductConcreteDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenProductListIsNotFound(): void
     {
         // Assign
@@ -102,9 +90,6 @@ class ProductListProductConcreteDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenProductConcreteSkuIsNotDefined(): void
     {
         // Assign
@@ -118,9 +103,6 @@ class ProductListProductConcreteDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenProductConcreteIsNotFound(): void
     {
         // Assign
@@ -134,9 +116,6 @@ class ProductListProductConcreteDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testGetImportTypeReturnsTypeOfImporter(): void
     {
         // Assert

@@ -89,25 +89,16 @@ class ProductListDataImportBusinessFactory extends DataImportBusinessFactory
         return $dataImporter;
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createProductConcreteSkuToIdProductConcreteStep(): DataImportStepInterface
     {
         return new ProductConcreteSkuToIdProductConcreteStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createProductListKeyToIdProductListStep(): DataImportStepInterface
     {
         return new ProductListKeyToIdProductListStep();
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createCategoryKeyToIdCategoryStep(): DataImportStepInterface
     {
         return new CategoryKeyToIdCategoryStep();

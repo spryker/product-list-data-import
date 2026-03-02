@@ -29,11 +29,6 @@ class ProductListDataImportCommunicationTester extends Actor
 {
     use _generated\ProductListDataImportCommunicationTesterActions;
 
-    /**
-     * @param string $filePath
-     *
-     * @return \Generated\Shared\Transfer\DataImporterConfigurationTransfer
-     */
     public function getDataImporterReaderConfigurationTransfer(string $filePath): DataImporterConfigurationTransfer
     {
         $dataImporterReaderConfigurationTransfer = new DataImporterReaderConfigurationTransfer();

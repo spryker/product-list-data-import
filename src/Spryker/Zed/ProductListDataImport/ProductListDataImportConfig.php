@@ -63,9 +63,6 @@ class ProductListDataImportConfig extends DataImportConfig
         return $this->buildImporterConfiguration($moduleDataImportDirectory . 'product_list_to_concrete_product.csv', static::IMPORT_TYPE_PRODUCT_LIST_PRODUCT_CONCRETE);
     }
 
-    /**
-     * @return string
-     */
     protected function getModuleRoot(): string
     {
         $moduleRoot = realpath(

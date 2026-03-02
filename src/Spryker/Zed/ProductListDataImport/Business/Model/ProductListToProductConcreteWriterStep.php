@@ -16,21 +16,11 @@ use Spryker\Zed\ProductListDataImport\Business\Model\DataSet\ProductListDataSetI
 
 class ProductListToProductConcreteWriterStep extends PublishAwareStep implements DataImportStepInterface
 {
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $this->saveProductListProductConcrete($dataSet);
     }
 
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     protected function saveProductListProductConcrete(DataSetInterface $dataSet): void
     {
         $productListProductConcreteEntity = SpyProductListProductConcreteQuery::create()

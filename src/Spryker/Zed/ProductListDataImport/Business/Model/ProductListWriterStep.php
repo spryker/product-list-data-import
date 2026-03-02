@@ -17,11 +17,6 @@ use Spryker\Zed\ProductListDataImport\Business\Model\DataSet\ProductListDataSetI
 
 class ProductListWriterStep extends PublishAwareStep implements DataImportStepInterface
 {
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $this->saveProductList($dataSet);

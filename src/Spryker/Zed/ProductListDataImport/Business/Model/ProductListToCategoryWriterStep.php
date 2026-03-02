@@ -16,21 +16,11 @@ use Spryker\Zed\ProductListDataImport\Business\Model\DataSet\ProductListDataSetI
 
 class ProductListToCategoryWriterStep extends PublishAwareStep implements DataImportStepInterface
 {
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $this->saveProductListCategory($dataSet);
     }
 
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     protected function saveProductListCategory(DataSetInterface $dataSet): void
     {
         $productListCategoryEntity = SpyProductListCategoryQuery::create()

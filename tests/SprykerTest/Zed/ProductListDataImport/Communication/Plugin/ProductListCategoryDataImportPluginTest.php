@@ -36,9 +36,6 @@ class ProductListCategoryDataImportPluginTest extends Unit
      */
     protected static $neededDataAdded = false;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         parent::setUp();
@@ -57,9 +54,6 @@ class ProductListCategoryDataImportPluginTest extends Unit
         }
     }
 
-    /**
-     * @return void
-     */
     public function testImportImportsData(): void
     {
         // Assign
@@ -78,9 +72,6 @@ class ProductListCategoryDataImportPluginTest extends Unit
         $this->tester->assertProductListCategoryTableContainsRecords();
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenCategoryKeyIsNotDefined(): void
     {
         // Assign
@@ -94,9 +85,6 @@ class ProductListCategoryDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenCategoryIsNotFound(): void
     {
         // Assign
@@ -110,9 +98,6 @@ class ProductListCategoryDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenProductListKeyIsNotDefined(): void
     {
         // Assign
@@ -126,9 +111,6 @@ class ProductListCategoryDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testImportThrowsExceptionWhenProductListIsNotFound(): void
     {
         // Assign
@@ -142,9 +124,6 @@ class ProductListCategoryDataImportPluginTest extends Unit
         $merchantRelationshipProductListDataImportPlugin->import($dataImportConfigurationTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testGetImportTypeReturnsTypeOfImporter(): void
     {
         // Assert
